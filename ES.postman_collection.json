@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "fbf2ca80-ba28-4daa-bc55-a7de2895a308",
+		"name": "ES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AWS ES",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"query\" : {\r\n   \"match_phrase\": {\r\n            \"question\": \"To which authorities the master circular\"\r\n        }\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://search-streaminghub2-bs2uras4whg2cwjoyif4ybbnle.ap-south-1.es.amazonaws.com/test_index_3/_search",
+					"protocol": "https",
+					"host": [
+						"search-streaminghub2-bs2uras4whg2cwjoyif4ybbnle",
+						"ap-south-1",
+						"es",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"test_index_3",
+						"_search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
